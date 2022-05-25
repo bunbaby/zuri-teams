@@ -1,0 +1,14 @@
+#program to determine if two words are anagrams
+def anagram(word1=" ",word2=" "):
+    word1 = input('enter a word: ')
+    word2 = input('Enter a word: ')
+    word1.replace(' ','')
+    word2.replace(' ','')
+    word1 = word1.lower()
+    word2 = word2.lower()
+    if sorted(word1) == sorted(word2):
+        print('true')
+    else:
+        print('false')
+
+anagram()
